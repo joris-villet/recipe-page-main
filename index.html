@@ -17,6 +17,22 @@
       --rose-dark: hsl(332, 51%, 32%);
       --rose-clear: hsl(330, 100%, 98%);
       --text-brown: hsl(14, 45%, 36%);
+      --stone-100: hsl(30, 54%, 90%);
+      --stone-150: hsl(30, 18%, 87%);
+      --stone-600: hsl(30, 10%, 34%);
+      --stone-900: hsl(24, 5%, 18%);
+    }
+
+    @font-face {
+      font-family: YoungSerifRegular;
+      src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: OutfitBlack;
+      src: url("assets/fonts/outfit/static/Outfit-Medium.ttf") format("truetype");
+      font-weight: 400 600 700;
     }
 
     .attribution {
@@ -42,16 +58,16 @@
     <div class="container mx-auto max-w-[1440px]">
       <header class="flex flex-col gap-8">
         <img src="./assets/images/image-omelette.jpeg" alt="image omelette" class="w-full rounded-xl">
-        <h1 class="text-4xl font-bold">Simple Omelette Recipe</h1>
-        <p class="text-[16px] text-neutral-600">
+        <h1 class="text-4xl font-[YoungSerifRegular]">Simple Omelette Recipe</h1>
+        <p class="text-[16px] text-neutral-500 font-[OutfitBlack] font-normal">
           An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs<br /> cooked
           to perfection, optionally filled with your choice of cheese, vegetables, or meats.
         </p>
       </header>
       <!-- bg-pink-300/10 -->
-      <section class="my-8 text-neutral-600">
+      <section class="my-8 text-neutral-500">
         <div class="p-6 rounded-xl bg-[var(--rose-clear)]">
-          <h2 class="text-2xl mb-4 text-[var(--rose-dark)] font-bold">Preparation time</h2>
+          <h2 class="text-xl mb-4 text-[var(--rose-dark)] font-[OutfitBlack] font-semibold">Preparation time</h2>
           <ul class="list-disc pl-6 flex flex-col gap-2">
             <li class="pl-6"><strong>Total:</strong> Approximately 10 minutes</li>
             <li class="pl-6"><strong>Preparation:</strong> 5 minutes</li>
@@ -59,10 +75,10 @@
           </ul>
         </div>
       </section>
-      <section class="my-8 text-neutral-600">
+      <section class="my-8 text-neutral-500">
         <div>
-          <h3 class="text-3xl mb-4 text-[var(--text-brown)] font-bold">Ingredients</h3>
-          <ul class="list-disc pl-6 flex flex-col gap-2">
+          <h3 class="text-3xl mb-4 text-[var(--text-brown)] font-[YoungSerifRegular]">Ingredients</h3>
+          <ul class="list-disc pl-6 flex flex-col gap-2 font-[OutfitBlack]">
             <li class="pl-6">2-3 large eggs</li>
             <li class="pl-6">Salt, to taste</li>
             <li class="pl-6">Pepper, to taste</li>
@@ -72,45 +88,45 @@
         </div>
       </section>
       <div class="w-full h-[1px] bg-neutral-300 my-8"></div>
-      <section class="my-8 text-neutral-600">
+      <section class="my-8 text-neutral-500">
         <div>
-          <h3 class="text-3xl mb-4 text-[var(--text-brown)] font-bold">Instructions</h3>
-          <ol class="list-decimal pl-6 flex flex-col gap-2">
-            <li class="pl-6 marker:text-[hsl(332,51%,32%)] marker:font-bold">
+          <h3 class="text-3xl mb-4 text-[var(--text-brown)] font-[YoungSerifRegular]">Instructions</h3>
+          <ol class="list-decimal pl-6 flex flex-col gap-2 font-[OutfitBlack]">
+            <li class="pl-6 marker:text-[var(--text-brown)] marker:font-bold">
               <strong class="pr-2">Beat the eggs:</strong>
               <p class="inline">
                 In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
                 You can add a tablespoon of water or milk for a fluffier texture.
               </p>
             </li>
-            <li class="pl-6">
+            <li class="pl-6 marker:text-[var(--text-brown)] marker:font-bold">
               <strong>Heat the pan:</strong>
               <p class="inline">
                 Place a non-stick frying pan over medium heat and add butter or oil.
               </p>
             </li>
-            <li class="pl-6">
+            <li class="pl-6 marker:text-[var(--text-brown)] marker:font-bold">
               <strong>Cook the omelette:</strong>
               <p class="inline">
                 Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
                 the eggs evenly coat the surface.
               </p>
             </li>
-            <li class="pl-6">
+            <li class="pl-6 marker:text-[var(--text-brown)] marker:font-bold">
               <strong>Add fillings (optional):</strong>
               <p class="inline">
                 When the eggs begin to set at the edges but are still slightly runny in the
                 middle, sprinkle your chosen fillings over one half of the omelette.
               </p>
             </li>
-            <li class="pl-6">
+            <li class="pl-6 marker:text-[var(--text-brown)] marker:font-bold">
               <strong> Fold and serve:</strong>
               <p class="inline">
                 As the omelette continues to cook, carefully lift one edge and fold it over the
                 fillings. Let it cook for another minute, then slide it onto a plate.
               </p>
             </li>
-            <li class="pl-6">
+            <li class="pl-6 marker:text-[var(--text-brown)] marker:font-bold">
               <strong>Enjoy:</strong>
               <p class="inline">
                 Serve hot, with additional salt and pepper if needed.
@@ -120,46 +136,35 @@
         </div>
       </section>
       <div class="w-full h-[1px] bg-neutral-300 my-8"></div>
-      <section class="my-8 text-neutral-600">
-        <h3 class="text-3xl mb-4 text-[var(--text-brown)] font-bold">Nutrition</h3>
-        <p>The table below shows nutritional values per serving without the additional fillings.</p>
-        <table class="w-full table-auto border-collapse my-4">
-          <tbody>
-            <tr class="border-b border-neutral-200">
-              <th class="text-left pl-10 py-4 font-normal">Calories</th>
-              <td class="p-2 text-[var(--text-brown)] font-bold">277kcal</td>
-            </tr>
-            <tr class="border-b border-neutral-200">
-              <th class="text-left pl-10 py-4 font-normal">Carbs</th>
-              <td class="p-2 text-[var(--text-brown)] font-bold">0g</td>
-            </tr>
-            <tr class="border-b border-neutral-200">
-              <th class="text-left pl-10 py-4 font-normal">Protein</th>
-              <td class="p-2 text-[var(--text-brown)] font-bold">20g</td>
-            </tr>
-            <tr>
-              <th class="text-left pl-10 py-4 font-normal">Fat</th>
-              <td class="p-2 text-[var(--text-brown)] font-bold">22g</td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="my-8 text-neutral-500">
+        <div class="font-[OutfitBlack]">
+          <h3 class="text-3xl mb-4 text-[var(--text-brown)] font-[YoungSerifRegular]">Nutrition</h3>
+          <p>The table below shows nutritional values per serving without the additional fillings.</p>
+          <table class="w-full table-auto border-collapse my-4">
+            <tbody>
+              <tr class="border-b border-neutral-200">
+                <th class="text-left pl-10 py-4 font-normal">Calories</th>
+                <td class="p-2 text-[var(--text-brown)] font-bold">277kcal</td>
+              </tr>
+              <tr class="border-b border-neutral-200">
+                <th class="text-left pl-10 py-4 font-normal">Carbs</th>
+                <td class="p-2 text-[var(--text-brown)] font-bold">0g</td>
+              </tr>
+              <tr class="border-b border-neutral-200">
+                <th class="text-left pl-10 py-4 font-normal">Protein</th>
+                <td class="p-2 text-[var(--text-brown)] font-bold">20g</td>
+              </tr>
+              <tr>
+                <th class="text-left pl-10 py-4 font-normal">Fat</th>
+                <td class="p-2 text-[var(--text-brown)] font-bold">22g</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
       </section>
     </div>
   </main>
-
-
-
-  <!-- Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
