@@ -13,39 +13,54 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    body  {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
   </style>
 </head>
 <body>
 
-  <!-- <main>
+  <main class="py-8">
     <div class="container mx-auto max-w-[1440px]">
-      <header>
+      <header class="flex flex-col gap-8">
         <img 
           src="./assets/images/image-omelette.jpeg" 
           alt="image omelette"
+          class="w-full rounded-xl"
         >
+        <h1 class="text-4xl font-bold">Simple Omelette Recipe</h1>
+        <p class="text-[16px] text-neutral-600">
+          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs<br/> cooked 
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+        </p>
       </header>
+      <section class="my-8 text-neutral-600">
+        <div class="bg-pink-300/10 p-6 rounded-xl">
+          <h2 class="text-2xl mb-4">Preparation time</h2>
+          <ul class="list-disc pl-6 flex flex-col gap-2">
+            <li class="pl-6"><strong>Total:</strong> Approximately 10 minutes</li>
+            <li class="pl-6"><strong>Preparation:</strong> 5 minutes</li>
+            <li class="pl-6"><strong>Cooking:</strong> 5 minutes</li>
+          </ul>
+        </div>
+      </section>
+      <section class="my-8 text-neutral-600">
+        <div>
+          <h3 class="text-3xl mb-4 font-bold">Ingredients</h3>
+          <ul class="list-disc pl-6 flex flex-col gap-2">
+            <li class="pl-6">2-3 large eggs</li>
+            <li class="pl-6">Salt, to taste</li>
+            <li class="pl-6">Pepper, to taste</li>
+            <li class="pl-6">1 tablespoon of butter or oil</li>
+            <li class="pl-6">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          </ul>
+        </div>
+      </section>
     </div>
-  </main> -->
-
-  Simple Omelette Recipe
-
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-
-  Preparation time
-
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
-
-  Ingredients
-
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
+  </main>
 
   Instructions
 
